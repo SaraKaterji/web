@@ -13,7 +13,7 @@ form.addEventListener("submit", function (e) {
 
 function readExcel(searchstring) {
     var xhr = new XMLHttpRequest();
-    xhr.open('GET', 'http://127.0.0.1:5500/t.xlsx', true);
+    xhr.open('GET', 'https://sarakaterji.github.io/web/t.xlsx', true);
     xhr.responseType = 'blob';
     xhr.onload = function (e) {
         if (this.status == 200) {
