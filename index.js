@@ -49,6 +49,7 @@ function excelFileToJSON(file, searchstring) {
 }
 
 function lookupJson(lookuptable, messages, searchstring) {
+    searchstring = searchstring.trim().toUpperCase();
     var energielabel = document.getElementById("energielabel");
     var message = document.getElementById("message");
     var found = false;
