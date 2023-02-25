@@ -59,7 +59,7 @@ function lookupJson(lookuptable, messages, searchstring) {
                 //energielabel.value = row["label"];
                 for (var j = 0; j < messages.length; j++) {
                     if (messages[j]["result"] == row["label"]) {
-                        message.innerHTML = messages[j]["message"];
+                        message.innerHTML =  row["label"] + "<br/>" +  messages[j]["message"];
                         found = true;
                         break;
                     }
